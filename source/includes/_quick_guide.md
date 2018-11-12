@@ -22,7 +22,7 @@ __fqn__ | string | The fully qualified name of the process.
 __timestamp__ | int | An UNIX-timestamp representation of when the Reading was recorded.
 __value__ | float | The recorded result of the measurement.
 
-### Predictions
+### Predictions 
 
 * The core of the Metislabs API provides different forms of `Predictions` for the user.
 * `Predictions` are projected future `Readings` made from previously recorded `Readings`.

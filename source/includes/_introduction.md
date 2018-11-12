@@ -6,8 +6,8 @@ Metis Labs API allows you to easily integrate machine learning predictions into 
 
 This documentation hopes to cover the range of actions that a user can take, and provides explanations where necessary. Here is a content of what is available:
 
-* [Authentication](#authentication) - Guide on how to authenticate with the API and get access to available endpoints.
 * [Quick Guide](#quick-guide) - Quick guide on how data is organised in the API and a general terminology reference.
+* [Authentication](#authentication) - Guide on how to authenticate with the API and get access to available endpoints.
 * [Prediction](#prediction) - Guide on how to retrieve predictions made from specific processes.
 * [Comparison](#comparison) - Guide on how to retrieve comparisons between predictions and actual events for specific processes.
 * [Subsystem Breakdown](#subsystem-breakdown) - Guide on how to retrieve Subsytem Breakdown data.

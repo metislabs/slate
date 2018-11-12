@@ -7,13 +7,16 @@ Retrieves the current health status of `Metislabs API`.
 * The expected response for a healthy Metislabs API is listed below in the responses section.
 * Any other response indicates problems with the API, please contact the relevant support email for more information.
 
-#### Response
-
- Attribute | Value
+          | Value
 ---------:|:-----
 __endpoint__ | `https://api.metislabs.tech/1.0/health_check`
 __method(s)__ | `GET`
-__status__ | "OK"
-__message__ | "All healthy!"
-__status_code__ | 200
-__payload__ | nil
+
+#### Response
+
+ Attribute | Type | Value
+---------:|:----:|:-----
+__status__ | string | "OK"
+__message__ | string | "All healthy!"
+__status_code__ | int | 200
+__payload__ | JSON | nil

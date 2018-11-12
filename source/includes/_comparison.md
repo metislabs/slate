@@ -1,7 +1,12 @@
-## Comparisons
+## Comparison
 Retrieves both `Readings` and the `interval`-th `Predictions` in the last `horizon` span specified.
 
 ### Usage
+
+          | Value
+---------:|:-----
+__endpoint__ | `https://api.metislabs.tech/1.0/comparison`
+__method(s)__ | `GET`
 
 #### Parameters
 
@@ -18,17 +23,18 @@ __interval__ | int | NA | x in (5, 10, 15) | An integer value which represents t
 
 #### Response
 
- Attribute | Value
----------:|:-----
-__endpoint__ | `https://api.metislabs.tech/1.0/comparison`
-__method(s)__ | `GET`
-__status__ | "OK"
-__message__ | "ML comparisons"
-__status_code__ | 200
+ Attribute | Type | Value
+---------:|:----:|:-----
+__status__ | string | "OK"
+__message__ | string | "ML comparisons"
+__status_code__ | int | 200
 
 There will be an `payload` attribute populated with:
 
- Attribute | Value
----------:|:-----
-__readings__ | A list of `Readings` with the format specified in [Readings](#readings).
-__predictions__ | A list of `Predictions` with the format specified in [Predictions](#predictions).
+ Attribute | Type | Value
+---------:|:----:|:-----
+__fqn__ | string | The FQN that the predictions and readings are associated with.
+__name__ | string | THe process name of the FQN.
+__color__ | JSON | The color codes for frontends to render the colour of the graphs. (This is can be ignored)
+__readings__ | JSON Arrary | An array of `Readings` with the format specified in [Readings](#readings).
+__predictions__ | JSON Arrary | An array of `Predictions` with the format specified in [Predictions](#predictions).

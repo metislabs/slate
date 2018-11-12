@@ -10,11 +10,11 @@
 
 Status | Status Code | Meaning
 ---------------: | :-----------: | :--------
-url-parameter-error | 400 | The parameters supplied to the URL are incorrect or of a bad format.
-authentication-required | 401 | Authentication is required to access resources at the endpoint.
-permission-denied | 403 | The permissions level associated with the request was not sufficient to use the endpoint.
-page-not-found | 404 | The URL used in the request does not exist on the API
-method-not-allowed | 405 | The HTTP method supplied in the request is not permitted on the endpoint.
+__url-parameter-error__ | 400 | The parameters supplied to the URL are incorrect or of a bad format.
+__authentication-required__ | 401 | Authentication is required to access resources at the endpoint.
+__permission-denied__ | 403 | The permissions level associated with the request was not sufficient to use the endpoint.
+__page-not-found__ | 404 | The URL used in the request does not exist on the API
+__method-not-allowed__ | 405 | The HTTP method supplied in the request is not permitted on the endpoint.
 
 ### Server based errors
 
@@ -22,7 +22,7 @@ method-not-allowed | 405 | The HTTP method supplied in the request is not permit
 
 Status | Status Code | Meaning
 ---------------: | :-----------: | :--------
-internal-server-error | 500 | A generic error in the server.
-customer-not-found | 500 | The specified customer was not found, please contact customer support.
-forecast-not-found | 500 | The specified forecast was not found, please contact customer support.
-subsystem-breakdown-not-found | 500 | The specified subsystem breakdown was not found, please contact customer support.
+__internal-server-error__ | 500 | A generic error in the server.
+__customer-not-found__ | 500 | The specified customer was not found, please contact customer support.
+__forecast-not-found__ | 500 | The specified forecast was not found, please contact customer support.
+__subsystem-breakdown-not-found__ | 500 | The specified subsystem breakdown was not found, please contact customer support.
