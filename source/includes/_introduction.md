@@ -2,7 +2,7 @@
 
 Welcome to the Metislabs API.
 
-!!! Say some sugary stuff about the API does. !!!
+Metis Labs API allows you to easily integrate machine learning predictions into your application.
 
 This documentation hopes to cover the range of actions that a user can take, and provides explanations where necessary. Here is a content of what is available:
 

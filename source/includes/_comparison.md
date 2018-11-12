@@ -18,8 +18,8 @@ __interval__ | int | NA | x in (5, 10, 15) | An integer value which represents t
 
 #### Response
 
-  | Value
---:|:------
+ Attribute | Value
+---------:|:-----
 __endpoint__ | `https://api.metislabs.tech/1.0/comparison`
 __method(s)__ | `GET`
 __status__ | "OK"
@@ -28,7 +28,7 @@ __status_code__ | 200
 
 There will be an `payload` attribute populated with:
 
-  | Value
---:|:-----
+ Attribute | Value
+---------:|:-----
 __readings__ | A list of `Readings` with the format specified in [Readings](#readings).
 __predictions__ | A list of `Predictions` with the format specified in [Predictions](#predictions).
