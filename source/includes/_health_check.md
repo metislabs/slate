@@ -1,6 +1,6 @@
 ## Health Check
 
-Retrieves the currently health status of `Metislabs API`.
+Retrieves the current health status of `Metislabs API`.
 
 ### Usage
 
@@ -16,4 +16,4 @@ __method(s)__ | `GET`
 __status__ | "OK"
 __message__ | "All healthy!"
 __status_code__ | 200
-__payload__ | NA
+__payload__ | nil

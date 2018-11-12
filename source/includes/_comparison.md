@@ -13,7 +13,7 @@ __horizon__ | float | NA | x > 0 | A float value which represents the number of 
 __interval__ | int | NA | x in (5, 10, 15) | An integer value which represents the set of `Predictions` to be retrieved, has to be either 5, 10 or 15.
 
 * Each [Prediction](#predictions) is classed by the intervals it was made in.
-* Currently only 5, 10 and 15 minute `Predictions`.
+* Currently only 5, 10 and 15 minute `Predictions` are available upon request.
 * If the `horizon` and `interval` parameters are not specified or incorrectly specified, a [URLParameterError](#client-based-errors) will be returned in the response.
 
 #### Response
