@@ -7,8 +7,8 @@ Retrieves the most recent set of `Predictions` along with the most recent `horiz
 
 The `Default Value` column specifies the value used when the user does not specify a parameter in the request.
 
-Field | Type | Default Value | Limitation | Description
------:|:----:|:-------------:|:----------:|:-----------
+Field | Type | Default | Limitation | Description
+-----:|:----:|:---------:|:----------:|:-----------
 __horizon__ | float | 2.5 | x > 0 | A float value which represents the number of hours of `Readings` the user specifies in the request.
 
 #### Response

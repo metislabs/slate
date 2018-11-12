@@ -5,10 +5,10 @@ Retrieves both `Readings` and the `interval`-th `Predictions` in the last `horiz
 
 #### Parameters
 
-The `Default Value` column specifies the value used when the user does not specify a parameter in the request.
+The `Default` column specifies the value used when the user does not specify a parameter in the request.
 
-Field | Type | Default Value | Limitation | Description
------:|:----:|:-------------:|:-----:|:-----------
+Field | Type | Default | Limitation | Description
+-----:|:----:|:---------:|:-----:|:-----------
 __horizon__ | float | NA | x > 0 | A float value which represents the number of hours of `Readings` the user specifies in the request.
 __interval__ | int | NA | x in (5, 10, 15) | An integer value which represents the set of `Predictions` to be retrieved, has to be either 5, 10 or 15.
 
