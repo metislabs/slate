@@ -16,6 +16,33 @@ Field | Type | Default | Limitation | Description
 -----:|:----:|:---------:|:----------:|:-----------
 __horizon__ | float | 2.5 | x > 0 | A float value which represents the number of hours of `Readings` the user specifies in the request.
 
+```json
+{
+    "status": "OK",
+    "message": "ML predictions",
+    "status_code": 200,
+    "payload": {
+        "fqn": "fqn1",
+        "name": "FQN 1",
+        "color": {
+            "readings": "blue",
+            "predictions": "red"
+        },
+        "predictions": [
+            {"value": 12.1, "timestamp": 3},
+            {"value": 13.42, "timestamp": 4},
+            {"value": 46.98, "timestamp": 5},
+        ],
+        "readings": [
+            {"value": 55.2, "timestamp": 0},
+            {"value": 32.16, "timestamp": 1},
+            {"value": 6.53, "timestamp": 2},
+        ]       
+    }
+}
+```
+
+
 #### Response
 
  Attribute | Type | Value

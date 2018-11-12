@@ -8,6 +8,42 @@ Retrieves a breakdown of aggregated `Readings`. This applies to all appropriate 
 __endpoint__ | `https://api.metislabs.tech/1.0/subsystem_breakdown`
 __method(s)__ | `GET`
 
+```json
+{
+    "status": "OK",
+    "message": "Subsystem Breakdown",
+    "status_code": 200,
+    "payload": [
+        {
+            "fqn": "fqn1",
+            "name": "FQN 1",
+            "color": {
+                "readings": "red",
+                "predictions": "blue"
+            },
+            "readings": [
+                {"value": 55.2, "timestamp": 0},
+                {"value": 32.16, "timestamp": 1},
+                {"value": 6.53, "timestamp": 2},
+            ]
+        },
+        {
+            "fqn": "fqn2",
+            "name": "FQN 2",
+            "color": {
+                "readings": "red",
+                "predictions": "blue"
+            },
+            "readings": [
+                {"value": 324.0, "timestamp": 0},
+                {"value": 1.44, "timestamp": 1},
+                {"value": 56.11, "timestamp": 2},
+            ]
+        },
+    ]
+}
+```
+
 ### Response
 
  Attribute | Type | Value

@@ -8,6 +8,37 @@ Retrieves information for forecasted processes. This provides the user with info
 __endpoint__ | `https://api.metislabs.tech/1.0/forecast_processes`
 __method(s)__ | `GET`
 
+```json
+{
+    "status": "OK",
+    "message": "Forecast Types and Processes",
+    "status_code": 200,
+    "payload": [
+        {
+            "id": "aggregate_process_1",
+            "name": "Aggregate process 1",
+            "processes": [{
+                "id": "sub_process_1",
+                "name": "Sub-process 1",
+                "subsystem_breakdown": true
+            }, {
+                "id": "sub_process_2",
+                "name": "Sub-process 2",
+                "subsystem_breakdown": false
+            }]
+        }, {
+            "id": "aggregate_process_2",
+            "name": "Aggregate process 2",
+            "processes": [{
+                "id": "sub_proccess_3",
+                "name": "Sub-Processes",
+                "subsystem_breakdown": false
+            }]
+        }
+    ]
+}
+```
+
 ### Response
 
  Attribute | Type | Value

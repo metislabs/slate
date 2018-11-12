@@ -21,6 +21,31 @@ __interval__ | int | NA | x in (5, 10, 15) | An integer value which represents t
 * Currently only 5, 10 and 15 minute `Predictions` are available upon request.
 * If the `horizon` and `interval` parameters are not specified or incorrectly specified, a [URLParameterError](#client-based-errors) will be returned in the response.
 
+```json
+{
+    "status": "OK",
+    "message": "ML comparisons",
+    "status_code": 200,
+    "payload": {
+        "fqn": "fqn1",
+        "name": "FQN 1",
+        "color": {
+            "readings": "blue",
+            "predictions": "red"
+        },
+        "predictions": [
+            {"value": 12.1, "timestamp": 0},
+            {"value": 13.42, "timestamp": 1},
+            {"value": 46.98, "timestamp": 2},
+        ],
+        "readings": [
+            {"value": 55.2, "timestamp": 0},
+            {"value": 32.16, "timestamp": 1},
+            {"value": 6.53, "timestamp": 2},
+        ]       
+    }
+}
+```
 #### Response
 
  Attribute | Type | Value

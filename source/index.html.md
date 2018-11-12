@@ -2,6 +2,7 @@
 title: Metislabs API Reference
 
 language_tabs:
+  - json
   - curl
   - python
   - js
