@@ -5,7 +5,7 @@ Retrieves the most recent set of `Predictions` along with the most recent `horiz
 
 #### Parameters
 
-The `Default Value` column specifies the value used when the user does not specify a parameter in the request.
+The `Default` column specifies the value used when the user does not specify a parameter in the request.
 
 Field | Type | Default | Limitation | Description
 -----:|:----:|:---------:|:----------:|:-----------
