@@ -15,8 +15,7 @@ The `Default` column specifies the value used when the user does not specify a p
 
 Field | Type | Default | Limitation | Description
 -----:|:----:|:---------:|:----------:|:-----------
-__organisation__ | string | NA | NA | The organisation that the user belongs to.
-__site__ | string | First site available to the user | NA | The site that the user wants to retrieve data from.
+__site__ | string | NA | NA | The site that the user wants to retrieve data from.
 __process__ | string | None  | NA | The process that the user wants to retrieve data from.
 __forecast__ | stirng | None | NA | The forecast that the user wants to retrieve data from.
 
@@ -87,7 +86,7 @@ __status__ | string | "OK"
 __message__ | string | "Information Measurements & Statistics"
 __status_code__ | int | 200
 
-The `payload` attribute associated with a successful response will be available as an array of `JSONs`, each `JSON` will
+The `payload` attribute associated with a successful response will be available as an array of objects, each object will
 represent the available metric.
 
  Attribute | Type | Value

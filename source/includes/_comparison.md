@@ -1,5 +1,5 @@
 ## Comparison
-Retrieves both `Readings` and `Predictions` for an user specified period(`horizon`). Users are also able to select the set of `Predictions` based on the `interval` specified.
+Retrieves both `Readings` and `Predictions` for a user specified period(`horizon`). Users are also able to select the set of `Predictions` based on the `interval` specified.
 
 ### Usage
 
@@ -14,8 +14,7 @@ The `Default` column specifies the value used when the user does not specify a p
 
 Field | Type | Default | Limitation | Description
 -----:|:----:|:---------:|:-----:|:-----------
-__organisation__ | string | NA | NA | The organisation that the user belongs to.
-__site__ | string | First site available to the user | NA | The site that the user wants to retrieve data from.
+__site__ | NA | First site available to the user | NA | The site that the user wants to retrieve data from.
 __process__ | string | None  | NA | The process that the user wants to retrieve data from.
 __forecast__ | stirng | None | NA | The forecast that the user wants to retrieve data from.
 __horizon__ | float | 2 | x > 0 | A float value which represents the number of hours of `Readings` the user specifies in the request.
@@ -23,7 +22,7 @@ __interval__ | int | 5 | x in (5, 10, 15) | An integer value which represents th
 
 * Each [Prediction](#predictions) is classed by the intervals it was made in.
 * Currently only 5, 10 and 15 minute `Predictions` are available upon request.
-* If the `horizon` and `interval` parameters are not specified or incorrectly specified, a [URLParameterError](#client-based-exceptions) will be returned in the response.
+* If the `horizon` and `interval` parameters are incorrectly specified, a [URLParameterError](#client-based-exceptions) will be returned in the response.
 
 ```json
 {
@@ -64,6 +63,6 @@ There will be a `payload` attribute populated with:
 ---------:|:----:|:-----
 __fqn__ | string | The FQN that the predictions and readings are associated with.
 __name__ | string | The process name of the FQN.
-__color__ | JSON | The color codes for frontends to render the colour of the graphs. (This is can be ignored)
-__readings__ | JSON Arrary | An array of `Readings` with the format specified in [Readings](#readings).
-__predictions__ | JSON Arrary | An array of `Predictions` with the format specified in [Predictions](#predictions).
+__color__ | Object | The color codes for frontends to render the colour of the graphs. (This is can be ignored)
+__readings__ | Object Arrary | An array of `Readings` with the format specified in [Readings](#readings).
+__predictions__ | Object Arrary | An array of `Predictions` with the format specified in [Predictions](#predictions).

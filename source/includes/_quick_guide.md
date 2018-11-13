@@ -2,10 +2,10 @@
 
 ### Management
 
-* Each user in the Metislabs API will belong to an `organisation`.
-* Each `organisation` can have one or more `sites` associated with the `organisation`, in most cases, `sites` individual factories.
+* Each `token` in the Metislabs API will belong to an `organisation`.
+* Each `organisation` can have one or more `sites` associated with the `organisation`, in most cases, `sites` can be thought of individual factories.
 * Each `site` contains multiple `processes` which may have `forecasts` associated with them.
-* Trying to access `organisation`, `site`, `proccess` and `forecast` which are not authorised to the user will result in a
+* Trying to access `organisation`, `site`, `proccess` and `forecast` which are not authorised to the `token` will result in a
 [PermissionDenied](#client-based-exceptions) exception.
 
 ### Response Format
@@ -17,7 +17,7 @@ Field | Type | Description
 __status__ | string | A brief description of the status of the response.
 __status_code__ | int | The HTTP status code of the response. Please see [Exceptions](#exceptions) for more details.
 __message__ | string | A more verbose, human readable version of the response status.
-__payload__ | JSON |  Contains either the requested data in a JSON format or `null` if data is not found or available.
+__payload__ | Object |  Contains either the requested data in a JSON format or `null` if data is not found or available.
 
 ### Readings
 

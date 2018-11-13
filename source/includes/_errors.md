@@ -1,5 +1,5 @@
 ## Errors
-Retrieves information for errors and discrepancy in the Metislabs API. This should provide the user with information on why certain `Readings` or `Predictions` are missing.
+Retrieves information for external errors that impact the service of Metislabs API. This should provide the user with information on why certain `Readings` or `Predictions` are missing.
 
 ### Usage
 
@@ -26,15 +26,15 @@ __site__ | string | First site available to the user | NA | The site that the us
     "payload":[
         {
             "category":"ingestion",
-            "end_timestamp":2,
+            "end_timestamp": 1542122253,
             "message":"Unable to retrieve historian data.",
-            "start_timestamp":1
+            "start_timestamp":1542121253
         },
         {
             "category":"predict_handler",
-            "end_timestamp":2,
+            "end_timestamp":1542122288,
             "message":"Response error from the /config endpoint",
-            "start_timestamp":1
+            "start_timestamp":1542121253
         }
     ],
     "status":"OK"
@@ -49,7 +49,7 @@ __status__ | string | "OK"
 __message__ | string | "Errors"
 __status_code__ | int | 200
 
-The `payload` attribute associated with a successful response will be available as an array of `JSONs`, each `JSON` will
+The `payload` attribute associated with a successful response will be available as an array of objects, each object will
 represent more information for a specific `error`.
 
  Attribute | Type | Value

@@ -61,6 +61,6 @@ There will be a `payload` attribute associated with a successful response with:
 ---------:|:----:|:-----
 __fqn__ | string | The FQN that the predictions and readings are associated with.
 __name__ | string | The process name for the FQN.
-__color__ | JSON | The color codes for frontends to render the colour of the graphs. (This is can be ignored)
-__readings__ | JSON Array | A list of `Readings` with the format specified in [Readings](#readings).
-__predictions__ | JSON Array | A list of `Predictions` with the format specified in [Predictions](#predictions).
+__color__ | Object | The color codes for frontends to render the colour of the graphs. (This is can be ignored)
+__readings__ | Object array | A list of `Readings` with the format specified in [Readings](#readings).
+__predictions__ | Object array | A list of `Predictions` with the format specified in [Predictions](#predictions).

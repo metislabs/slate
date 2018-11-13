@@ -15,8 +15,7 @@ The `Default` column specifies the value used when the user does not specify a p
 
 Field | Type | Default | Limitation | Description
 -----:|:----:|:---------:|:----------:|:-----------
-__organisation__ | string | NA | NA | The organisation that the user belongs to.
-__site__ | string | First site available to the user | NA | The site that the user wants to retrieve data from.
+__site__ | string | NA | NA | The site that the user wants to retrieve data from.
 __process__ | string | None  | NA | The process that the user wants to retrieve data from.
 __forecast__ | stirng | None | NA | The forecast that the user wants to retrieve data from.
 
@@ -64,13 +63,13 @@ __status__ | string | "OK"
 __message__ | string | "Subsystem Breakdown"
 __status_code__ | int | 200
 
-The `payload` attribute associated with a successful response will be available as a list of `JSONs`, each `JSON` will
-represent the system breakdown for a specific `FQN`. Here each `JSON` is described in more detail:
+The `payload` attribute associated with a successful response will be available as a list of objects, each object will
+represent the system breakdown for a specific `FQN`. Here each object is described in more detail:
 
  Attribute | Type | Value
 ---------:|:----:|:-----
 __fqn__ | string | The FQN that the readings are associated with.
 __name__ | string | The process name for the FQN.
-__color__ | JSON Array | The color codes for frontends to render the colour of the graphs. (This is can be ignored)
-__readings__ | JSON Array | A list of `Readings` with the format specified in [Readings](#readings).
-__predictions__ | JSON Array | A list of `Predictions` with the format specified in [Predictions](#predictions).
+__color__ | Object array | The color codes for frontends to render the colour of the graphs. (This is can be ignored)
+__readings__ | Object array | A list of `Readings` with the format specified in [Readings](#readings).
+__predictions__ | Object array | A list of `Predictions` with the format specified in [Predictions](#predictions).
