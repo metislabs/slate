@@ -7,6 +7,7 @@ Retrieves both `Readings` and the `interval`-th `Predictions` in the last `horiz
 ---------:|:-----
 __endpoint__ | `https://api.metislabs.tech/1.0/comparison`
 __method(s)__ | `GET`
+__role__ | `supervisor`
 
 #### Parameters
 

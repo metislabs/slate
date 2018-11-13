@@ -7,6 +7,8 @@ Retrieves information for forecasted processes. This provides the user with info
 ---------:|:-----
 __endpoint__ | `https://api.metislabs.tech/1.0/forecast_processes`
 __method(s)__ | `GET`
+__role__ | `operator`, `supervisor`
+
 
 ```json
 {

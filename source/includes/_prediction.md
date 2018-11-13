@@ -7,6 +7,7 @@ Retrieves the most recent set of `Predictions` along with the most recent `horiz
 ---------:|:-----
 __endpoint__ | `https://api.metislabs.tech/1.0/prediction`
 __method(s)__ | `GET`
+__role__ | `operator`, `supervisor`
 
 #### Parameters
 

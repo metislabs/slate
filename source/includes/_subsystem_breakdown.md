@@ -7,6 +7,7 @@ Retrieves a breakdown of aggregated `Readings`. This applies to all appropriate 
 ---------:|:-----
 __endpoint__ | `https://api.metislabs.tech/1.0/subsystem_breakdown`
 __method(s)__ | `GET`
+__role__ | `operator`, `supervisor`
 
 ```json
 {
