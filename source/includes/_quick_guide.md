@@ -9,7 +9,14 @@ Field | Type | Description
 __status__ | string | A brief description of the status of the response.
 __status_code__ | int | The HTTP status code of the response. Please see [Errors](#errors) for more details.
 __message__ | string | A more verbose, human readable version of the response status.
-__payload__ | JSON |  Contains either the requested data from the in a JSON format or `null` if data is not found or available.
+__payload__ | JSON |  Contains either the requested data in a JSON format or `None` if data is not found or available.
+
+### Permissions and Roles
+
+* Each user belongs to an `organisation` and is assigned a role of either `supervisor` or `operator`, with `supervisor` having elevated prvileges.
+* Only data from the `organisation` that the user belongs to will be available, and only specific API endpoints will be accessible to `supervisor` roles.
+* User `roles` and `organisation` are configured during the onboarding process, for additional information or change requests, please contact customer support.
+* Accessing `supervisor` only resources as `operator` will return a [PermissionDenied](#client-based-errors) error.
 
 ### Readings
 

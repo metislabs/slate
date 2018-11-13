@@ -1,8 +1,16 @@
 ## Errors
 
 * The Metislabs API returns the following error codes. All of the errors are returned in the standard format mentioned [here](#response-format). 
-* All of the responses should return a `payload` attribute of `nil`.
+* All of the responses will return a `payload` attribute of `nil`.
 * In the `message` attribute, there is a more verbose message detailing the situation and what went wrong.
+
+```json
+{
+    "status": "page-not-found",
+    "message": "<404 Page Not Found>: Your request did not contain the correct URL or format, please try again.", 
+    "payload": None
+}
+```
 
 ### Client based errors
 
@@ -13,7 +21,7 @@ Status | Status Code | Meaning
 __url-parameter-error__ | 400 | The parameters supplied to the URL are incorrect or of a bad format.
 __authentication-required__ | 401 | Authentication is required to access resources at the endpoint.
 __permission-denied__ | 403 | The permissions level associated with the request was not sufficient to use the endpoint.
-__page-not-found__ | 404 | The URL used in the request does not exist on the API
+__page-not-found__ | 404 | The URL used in the request does not exist on the API.
 __method-not-allowed__ | 405 | The HTTP method supplied in the request is not permitted on the endpoint.
 
 ### Server based errors

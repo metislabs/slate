@@ -6,7 +6,7 @@ language_tabs:
   - curl
   - python
   - js
-  - c#
+  - csharp
 
 toc_footers:
   - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
