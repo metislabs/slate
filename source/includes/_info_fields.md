@@ -98,5 +98,5 @@ __label__ | string | The name of the metric.
 __position__ | int | The positional placement of the metric to be rendered by the frontend interface, can be ignored.
 __prefix__ | string or null | The unit prefix of the metric value, can be `null`.
 __suffix__ | string or null | The unit suffix of the metric value, can be `null`.
-__type__ | string | The authorization level for the metric, either `supervisor` or `operator`. Please refer to [roles](#permissions-and-roles) for more information.
+__type__ | string | The authorization level for the metric, either `supervisor` or `operator`.
 __value__ | string or float | A numerical or string value of the metric.
