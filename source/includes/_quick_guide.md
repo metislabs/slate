@@ -3,7 +3,7 @@
 ### Management
 
 * Each `token` in the Metislabs API will belong to an `organisation`.
-* Each `organisation` can have one or more `sites` associated with the `organisation`, in most cases, `sites` can be thought of individual factories.
+* Each `organisation` can have one or more `sites` associated with the `organisation`, in most cases, `sites` can be thought of as individual factories.
 * Each `site` contains multiple `processes` which may have `forecasts` associated with them.
 * Trying to access `organisation`, `site`, `proccess` and `forecast` which are not authorised to the `token` will result in a
 [PermissionDenied](#client-based-exceptions) exception.
