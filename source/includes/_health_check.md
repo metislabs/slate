@@ -1,6 +1,6 @@
 ## Health Check
 
-Retrieves the current health status of `Metislabs API`.
+Retrieves the overall current health status of `Metislabs API`.
 
 ### Usage
 
@@ -11,7 +11,7 @@ Retrieves the current health status of `Metislabs API`.
 ---------:|:-----
 __endpoint__ | `https://api.metislabs.tech/1.0/health_check`
 __method(s)__ | `GET`
-__role__ | `public`
+
 
 ```json
 {
@@ -29,4 +29,4 @@ __role__ | `public`
 __status__ | string | "OK"
 __message__ | string | "All healthy!"
 __status_code__ | int | 200
-__payload__ | JSON | None
+__payload__ | JSON | null

@@ -1,5 +1,5 @@
 ## Forecast Processes
-Retrieves information for forecasted processes. This provides the user with information on what processes are available, as well as if features such as Subsytem Breakdown are available.
+Retrieves information for forecasted processes. This provides the user with information on what processes are available, as well as if features such as [Subsystem Breakdown](#subsystem-breakdown) are available for subprocesses.
 
 ### Usage
 
@@ -7,7 +7,16 @@ Retrieves information for forecasted processes. This provides the user with info
 ---------:|:-----
 __endpoint__ | `https://api.metislabs.tech/1.0/forecast_processes`
 __method(s)__ | `GET`
-__role__ | `operator`, `supervisor`
+
+#### Parameters
+
+Field | Type | Default | Limitation | Description
+-----:|:----:|:---------:|:----------:|:-----------
+__organisation__ | string | NA | NA | The organisation that the user belongs to.
+__site__ | string | First site available to the user | NA | The site that the user wants to retrieve data from.
+__process__ | string | None  | NA | The process that the user wants to retrieve data from.
+__forecast__ | stirng | None | NA | The forecast that the user wants to retrieve data from.
+
 
 
 ```json
@@ -17,31 +26,31 @@ __role__ | `operator`, `supervisor`
     "status_code": 200,
     "payload": [
         {
-            "id": "aggregate_process_1",
-            "name": "Aggregate process 1",
+            "id": "main_process_1",
+            "name": "Main process 1",
             "processes": [{
                 "id": "sub_process_1",
                 "name": "Sub-process 1",
-                "subsystem_breakdown": true
+                "subsystem_breakdown": True
             }, {
                 "id": "sub_process_2",
                 "name": "Sub-process 2",
-                "subsystem_breakdown": false
+                "subsystem_breakdown": False
             }]
         }, {
-            "id": "aggregate_process_2",
-            "name": "Aggregate process 2",
+            "id": "main_process_1",
+            "name": "Main process 2",
             "processes": [{
                 "id": "sub_proccess_3",
                 "name": "Sub-Processes",
-                "subsystem_breakdown": false
+                "subsystem_breakdown": False
             }]
         }
     ]
 }
 ```
 
-### Response
+#### Response
 
  Attribute | Type | Value
 ---------:|:----:|:-----
@@ -65,5 +74,3 @@ This table describes the attributes available for each `process` in the `process
 __id__ | string | The `id` of the individual process.
 __name__ | string | The process name for the individual process.
 __subsystem_breakdown__ | boolean | This value indicates if the individual process is included in the [Subsystem breakdown](#subsystem-breakdown).
-
-* If [ForecastNotFound](#client-based-errors) will be returned in the response, please contact customer support.
