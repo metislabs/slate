@@ -6,6 +6,7 @@ Retrieves the overall current health status of `Metislabs API`.
 
 * The expected response for a healthy Metislabs API is listed below in the responses section.
 * Any other response indicates problems with the API, please contact the relevant support email for more information.
+* This endpoint is publically available.
 
           | Value
 ---------:|:-----

@@ -11,6 +11,8 @@ __method(s)__ | `GET`
 
 #### Parameters
 
+The `Default` column specifies the value used when the user does not specify a parameter in the request.
+
 Field | Type | Default | Limitation | Description
 -----:|:----:|:---------:|:----------:|:-----------
 __organisation__ | string | NA | NA | The organisation that the user belongs to.
