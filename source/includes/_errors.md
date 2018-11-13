@@ -62,5 +62,5 @@ __start_timestamp__ | int | The UNIX-timestamp representation of when the error 
 
  Category | Meaning 
 ---------:|:--------
-ingestion | Issues with data ingestion, this could range from network issues to historian issues.
-predict_handler | Issues with making predictions, this could range from network issues to poor quality data being ingested.
+__ingestion__ | Issues with data ingestion, this could range from network issues to historian issues.
+__predict_handler__ | Issues with making predictions, this could range from network issues to poor quality data being ingested.
