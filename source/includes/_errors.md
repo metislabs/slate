@@ -8,6 +8,13 @@ Retrieves information for errors and discrepancy in the Metislabs API. This shou
 __endpoint__ | `https://api.metislabs.tech/1.0/errors`
 __method(s)__ | `GET`
 
+#### Parameters
+
+Field | Type | Default | Limitation | Description
+-----:|:----:|:---------:|:----------:|:-----------
+__organisation__ | string | NA | NA | The organisation that the user belongs to.
+__site__ | string | First site available to the user | NA | The site that the user wants to retrieve data from.
+
 
 ```json
 {
@@ -32,7 +39,7 @@ __method(s)__ | `GET`
 }
 ```
 
-### Response
+#### Response
 
  Attribute | Type | Value
 ---------:|:----:|:-----
