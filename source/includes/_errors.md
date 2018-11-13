@@ -1,36 +1,68 @@
 ## Errors
+Retrieves information for external errors that impact the service of Metislabs API. This should provide the user with information on why certain `Readings` or `Predictions` are missing.
 
-* The Metislabs API returns the following error codes. All of the errors are returned in the standard format mentioned [here](#response-format). 
-* All of the responses will return a `payload` attribute of `nil`.
-* In the `message` attribute, there is a more verbose message detailing the situation and what went wrong.
+### Usage
+
+          | Value
+---------:|:-----
+__endpoint__ | `https://api.metislabs.tech/1.0/errors`
+__method(s)__ | `GET`
+
+#### Parameters
+
+The `Default` column specifies the value used when the user does not specify a parameter in the request.
+
+Field | Type | Default | Limitation | Description
+-----:|:----:|:---------:|:----------:|:-----------
+__organisation__ | string | NA | NA | The organisation that the user belongs to.
+__site__ | string | First site available to the user | NA | The site that the user wants to retrieve data from.
+
 
 ```json
 {
-    "status": "page-not-found",
-    "message": "<404 Page Not Found>: Your request did not contain the correct URL or format, please try again.", 
-    "payload": None
+
+    "status_code": 200,
+    "message":"Errors",
+    "payload":[
+        {
+            "category":"ingestion",
+            "end_timestamp": 1542122253,
+            "message":"Unable to retrieve historian data.",
+            "start_timestamp":1542121253
+        },
+        {
+            "category":"predict_handler",
+            "end_timestamp":1542122288,
+            "message":"Response error from the /config endpoint",
+            "start_timestamp":1542121253
+        }
+    ],
+    "status":"OK"
 }
 ```
 
-### Client based errors
+#### Response
 
-* Client based errors usually result from incorrect data input, wrong resources specified or unauthenticated access, if any of these occur, please check again how the resources are being accessed or used.
+ Attribute | Type | Value
+---------:|:----:|:-----
+__status__ | string | "OK"
+__message__ | string | "Errors"
+__status_code__ | int | 200
 
-Status | Status Code | Meaning
----------------: | :-----------: | :--------
-__url-parameter-error__ | 400 | The parameters supplied to the URL are incorrect or of a bad format.
-__authentication-required__ | 401 | Authentication is required to access resources at the endpoint.
-__permission-denied__ | 403 | The permissions level associated with the request was not sufficient to use the endpoint.
-__page-not-found__ | 404 | The URL used in the request does not exist on the API.
-__method-not-allowed__ | 405 | The HTTP method supplied in the request is not permitted on the endpoint.
+The `payload` attribute associated with a successful response will be available as an array of objects, each object will
+represent more information for a specific `error`.
 
-### Server based errors
+ Attribute | Type | Value
+---------:|:----:|:-----
+__category__ | string | The category of the error.
+__message__ | string | Message of what went wrong.
+__end_timestamp__ | int or null | The UNIX-timestamp representation of when the error was resolved.
+__start_timestamp__ | int | The UNIX-timestamp representation of when the error was started.
 
-* Server based errors result from errors or bugs in the API, if any of these occur, please do not hesistate to contact the customer support email with appropriate details to replicate the issue.
+* The __end_timestamp__ attribute can be `null` which means that the error is currently unresolved, errors which are resolved will return a valid timestamp.
+* Currently there are two categories of errors, they can be understood by:
 
-Status | Status Code | Meaning
----------------: | :-----------: | :--------
-__internal-server-error__ | 500 | A generic error in the server.
-__customer-not-found__ | 500 | The specified customer was not found, please contact customer support.
-__forecast-not-found__ | 500 | The specified forecast was not found, please contact customer support.
-__subsystem-breakdown-not-found__ | 500 | The specified subsystem breakdown was not found, please contact customer support.
+ Category | Meaning 
+---------:|:--------
+__ingestion__ | Issues with data ingestion, this could range from network issues to historian issues.
+__predict_handler__ | Issues with making predictions, this could range from network issues to poor quality data being ingested.

@@ -8,7 +8,16 @@ Retrieves additional information and statistics for related metrics.
 ---------:|:-----
 __endpoint__ | `https://api.metislabs.tech/1.0/info_fields`
 __method(s)__ | `GET`
-__role__ | `operator`, `supervisor`
+
+#### Parameters
+
+The `Default` column specifies the value used when the user does not specify a parameter in the request.
+
+Field | Type | Default | Limitation | Description
+-----:|:----:|:---------:|:----------:|:-----------
+__site__ | string | NA | NA | The site that the user wants to retrieve data from.
+__process__ | string | None  | NA | The process that the user wants to retrieve data from.
+__forecast__ | stirng | None | NA | The forecast that the user wants to retrieve data from.
 
 
 ```json
@@ -69,7 +78,7 @@ __role__ | `operator`, `supervisor`
 }
 ```
 
-### Response
+#### Response
 
  Attribute | Type | Value
 ---------:|:----:|:-----
@@ -77,7 +86,7 @@ __status__ | string | "OK"
 __message__ | string | "Information Measurements & Statistics"
 __status_code__ | int | 200
 
-The `payload` attribute associated with a successful response will be available as an array of `JSONs`, each `JSON` will
+The `payload` attribute associated with a successful response will be available as an array of objects, each object will
 represent the available metric.
 
  Attribute | Type | Value
@@ -88,7 +97,7 @@ __icon__ | string | The icon for the metric, can be ignored.
 __id__ | string | The id representation of the metric.
 __label__ | string | The name of the metric.
 __position__ | int | The positional placement of the metric to be rendered by the frontend interface, can be ignored.
-__prefix__ | string or nil | The unit prefix of the metric value, can be `nil`.
-__suffix__ | string or nil | The unit suffix of the metric value, can be `nil`.
-__type__ | string | The authorization level for the metric, either `supervisor` or `operator`. Please refer to [roles](#permissions-and-roles) for more information.
+__prefix__ | string or null | The unit prefix of the metric value, can be `null`.
+__suffix__ | string or null | The unit suffix of the metric value, can be `null`.
+__type__ | string | The authorization level for the metric, either `supervisor` or `operator`.
 __value__ | string or float | A numerical or string value of the metric.

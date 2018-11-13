@@ -24,6 +24,7 @@ includes:
   - prediction
   - profile
   - subsystem_breakdown
+  - exceptions
 
 search: true
 ---

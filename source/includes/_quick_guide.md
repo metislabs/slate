@@ -1,5 +1,13 @@
 ## Quick Guide
 
+### Management
+
+* Each `token` in the Metislabs API will belong to an `organisation`.
+* Each `organisation` can have one or more `sites` associated with the `organisation`, in most cases, `sites` can be thought of as individual factories.
+* Each `site` contains multiple `processes` which may have `forecasts` associated with them.
+* Trying to access `organisation`, `site`, `proccess` and `forecast` which are not authorised to the `token` will result in a
+[PermissionDenied](#client-based-exceptions) exception.
+
 ### Response Format
 
 * All of the responses returned from the Metislabs API follow a standardized format.
@@ -7,21 +15,14 @@
 Field | Type | Description
 ------:|:------:|:------------
 __status__ | string | A brief description of the status of the response.
-__status_code__ | int | The HTTP status code of the response. Please see [Errors](#errors) for more details.
+__status_code__ | int | The HTTP status code of the response. Please see [Exceptions](#exceptions) for more details.
 __message__ | string | A more verbose, human readable version of the response status.
-__payload__ | JSON |  Contains either the requested data in a JSON format or `None` if data is not found or available.
-
-### Permissions and Roles
-
-* Each user belongs to an `organisation` and is assigned a role of either `supervisor` or `operator`, with `supervisor` having elevated prvileges.
-* Only data from the `organisation` that the user belongs to will be available, and only specific API endpoints will be accessible to `supervisor` roles.
-* User `roles` and `organisation` are configured during the onboarding process, for additional information or change requests, please contact customer support.
-* Accessing `supervisor` only resources as `operator` will return a [PermissionDenied](#client-based-errors) error.
+__payload__ | Object |  Contains either the requested data in a JSON format or `null` if data is not found or available.
 
 ### Readings
 
 * Most of the data that the Metislabs API exposes can be thought of as `Readings`. 
-* Each `Reading` represents the recorded value(__value__) of an identified process(__fqn__) at a specific time(__timestamp__).
+* Each `Reading` represents the recorded value(__value__) of an identified sensor(__fqn__) at a specific time(__timestamp__).
 
 Field | Type | Description
 ------:|:------:|:------------
@@ -34,8 +35,7 @@ __value__ | float | The recorded result of the measurement.
 * The core of the Metislabs API provides different forms of `Predictions` for the user.
 * `Predictions` are projected future `Readings` made from previously recorded `Readings`.
 * In most cases, for each `Reading`, there are a set of `Predictions` associated with it.
-* The set of represents the `Predictions` at different time intervals for each reading, for example, one `Reading` may have a
-5 minute, 10 minute and a 15 minute `Prediction`.
+* Each `Prediction` belongs to an `interval` set as there are 5, 10 and 15 minute `Predictions` made from a `Reading`.
 * `Predictions` are represented exactly like `Readings`.
 
 Field | Type | Description
