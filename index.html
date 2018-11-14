@@ -1,0 +1,1494 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Metislabs API Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;json&quot;,&quot;curl&quot;,&quot;python&quot;,&quot;js&quot;,&quot;csharp&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo.png" class="logo" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="json">json</a>
+              <a href="#" data-language-name="curl">curl</a>
+              <a href="#" data-language-name="python">python</a>
+              <a href="#" data-language-name="js">js</a>
+              <a href="#" data-language-name="csharp">csharp</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#quick-guide" class="toc-h2 toc-link" data-title="Quick Guide">Quick Guide</a>
+                  </li>
+                  <li>
+                    <a href="#authentication" class="toc-h2 toc-link" data-title="Authentication">Authentication</a>
+                  </li>
+                  <li>
+                    <a href="#comparison" class="toc-h2 toc-link" data-title="Comparison">Comparison</a>
+                  </li>
+                  <li>
+                    <a href="#errors" class="toc-h2 toc-link" data-title="Errors">Errors</a>
+                  </li>
+                  <li>
+                    <a href="#forecast-processes" class="toc-h2 toc-link" data-title="Forecast Processes">Forecast Processes</a>
+                  </li>
+                  <li>
+                    <a href="#health-check" class="toc-h2 toc-link" data-title="Health Check">Health Check</a>
+                  </li>
+                  <li>
+                    <a href="#info-fields" class="toc-h2 toc-link" data-title="Info Fields">Info Fields</a>
+                  </li>
+                  <li>
+                    <a href="#prediction" class="toc-h2 toc-link" data-title="Prediction">Prediction</a>
+                  </li>
+                  <li>
+                    <a href="#subsystem-breakdown" class="toc-h2 toc-link" data-title="Subsystem Breakdown">Subsystem Breakdown</a>
+                  </li>
+                  <li>
+                    <a href="#exceptions" class="toc-h2 toc-link" data-title="Exceptions">Exceptions</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='introduction'>Introduction</h1>
+<p>Welcome to the Metislabs API.</p>
+
+<p>Metis Labs API allows users to easily integrate machine learning predictions into their application.</p>
+
+<p>This documentation hopes to cover the range of actions that a user can take, and provides explanations where necessary. Here is a content of what is available:</p>
+
+<ul>
+<li><a href="#quick-guide">Quick Guide</a> - Quick guide on how data is organised in the API and a general terminology reference.</li>
+<li><a href="#authentication">Authentication</a> - Guide on how to authenticate with the API and get access to available endpoints.</li>
+<li><a href="#prediction">Prediction</a> - Guide on how to retrieve predictions made from specific processes.</li>
+<li><a href="#comparison">Comparison</a> - Guide on how to retrieve comparisons between predictions and actual events for specific processes.</li>
+<li><a href="#subsystem-breakdown">Subsystem Breakdown</a> - Guide on how to retrieve subsystem breakdown data.</li>
+<li><a href="#forecast-processes">Forecast Processes</a> - Guide on how to retrieve data to show what processes are available for each forecast type.</li>
+<li><a href="#info-fields">Info Fields</a> - Guide on how to retrieve additional information and statistics.</li>
+<li><a href="#health-check">Health Check</a> - Guide on how to retrieve information about the service health.</li>
+<li><a href="#errors">Errors</a> - Guide on how to retrieve information about system errors in the Metislabs API.</li>
+<li><a href="#exceptions">Exceptions</a> - Guide on exception messages generated by the API.</li>
+</ul>
+<h2 id='quick-guide'>Quick Guide</h2><h3 id='management'>Management</h3>
+<ul>
+<li>Each <code>token</code> in the Metislabs API will belong to an <code>organisation</code>.</li>
+<li>Each <code>organisation</code> can have one or more <code>sites</code> associated with the <code>organisation</code>, in most cases, <code>sites</code> can be thought of as individual factories.</li>
+<li>Each <code>site</code> contains multiple <code>processes</code> which may have <code>forecasts</code> associated with them.</li>
+<li>Trying to access <code>organisation</code>, <code>site</code>, <code>proccess</code> and <code>forecast</code> which are not authorised to the <code>token</code> will result in a
+<a href="#client-based-exceptions">PermissionDenied</a> exception.</li>
+</ul>
+<h3 id='response-format'>Response Format</h3>
+<ul>
+<li>All of the responses returned from the Metislabs API follow a standardized format.</li>
+</ul>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Field</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>status</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">A brief description of the status of the response.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>status_code</strong></td>
+<td style="text-align: center">int</td>
+<td style="text-align: left">The HTTP status code of the response. Please see <a href="#exceptions">Exceptions</a> for more details.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>message</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">A more verbose, human readable version of the response status.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>payload</strong></td>
+<td style="text-align: center">Object</td>
+<td style="text-align: left">Contains either the requested data in a JSON format or <code>null</code> if data is not found or available.</td>
+</tr>
+</tbody></table>
+<h3 id='readings'>Readings</h3>
+<ul>
+<li>Most of the data that the Metislabs API exposes can be thought of as <code>Readings</code>. </li>
+<li>Each <code>Reading</code> represents the recorded value(<strong>value</strong>) of an identified sensor(<strong>fqn</strong>) at a specific time(<strong>timestamp</strong>).</li>
+</ul>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Field</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>fqn</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">The fully qualified name of the process.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>timestamp</strong></td>
+<td style="text-align: center">int</td>
+<td style="text-align: left">An UNIX-timestamp representation of when the Reading was recorded.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>value</strong></td>
+<td style="text-align: center">float</td>
+<td style="text-align: left">The recorded result of the measurement.</td>
+</tr>
+</tbody></table>
+<h3 id='predictions'>Predictions</h3>
+<ul>
+<li>The core of the Metislabs API provides different forms of <code>Predictions</code> for the user.</li>
+<li><code>Predictions</code> are projected future <code>Readings</code> made from previously recorded <code>Readings</code>.</li>
+<li>In most cases, for each <code>Reading</code>, there are a set of <code>Predictions</code> associated with it.</li>
+<li>Each <code>Prediction</code> belongs to an <code>interval</code> set as there are 5, 10 and 15 minute <code>Predictions</code> made from a <code>Reading</code>.</li>
+<li><code>Predictions</code> are represented exactly like <code>Readings</code>.</li>
+</ul>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Field</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>fqn</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">The fully qualified name of the process.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>timestamp</strong></td>
+<td style="text-align: center">int</td>
+<td style="text-align: left">An UNIX-timestamp representation of when the Prediction is expected to occur.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>value</strong></td>
+<td style="text-align: center">float</td>
+<td style="text-align: left">The predicted result of the measurement.</td>
+</tr>
+</tbody></table>
+<h2 id='authentication'>Authentication</h2><pre class="highlight plaintext"><code>curl --request POST \
+  --url 'https://auth0.metislabs.tech/oauth/token' \
+  --header 'content-type: application/json' \
+  --data '{"grant_type":"client_credentials", "client_id": "YOUR_CLIENT_ID", "client_secret": "YOUR_CLIENT_SECRET", "audience": "https://api.metislabs.tech"}'
+</code></pre><pre class="highlight plaintext"><code>curl --request GET \
+  --url https://api.metislabs.tech/1.0/prediction?site=YOUR_SITE&amp;process=YOUR_PROCESS&amp;forecast=YOUR_FORECAST_TYPE \
+  --header 'authorization: Bearer YOUR_ACCESS_TOKEN'
+</code></pre><h2 id='comparison'>Comparison</h2>
+<p>Retrieves both <code>Readings</code> and <code>Predictions</code> for a user specified period(<code>horizon</code>). Users are also able to select the set of <code>Predictions</code> based on the <code>interval</code> specified.</p>
+<h3 id='usage'>Usage</h3>
+<table><thead>
+<tr>
+<th style="text-align: right"></th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>endpoint</strong></td>
+<td style="text-align: left"><code>https://api.metislabs.tech/1.0/comparison</code></td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>method(s)</strong></td>
+<td style="text-align: left"><code>GET</code></td>
+</tr>
+</tbody></table>
+<h4 id='parameters'>Parameters</h4>
+<p>The <code>Default</code> column specifies the value used when the user does not specify a parameter in the request.</p>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Field</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: center">Default</th>
+<th style="text-align: center">Limitation</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>site</strong></td>
+<td style="text-align: center">NA</td>
+<td style="text-align: center">First site available to the user</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: left">The site that the user wants to retrieve data from.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>process</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: center">None</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: left">The process that the user wants to retrieve data from.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>forecast</strong></td>
+<td style="text-align: center">stirng</td>
+<td style="text-align: center">None</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: left">The forecast that the user wants to retrieve data from.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>horizon</strong></td>
+<td style="text-align: center">float</td>
+<td style="text-align: center">2</td>
+<td style="text-align: center">x &gt; 0</td>
+<td style="text-align: left">A float value which represents the number of hours of <code>Readings</code> the user specifies in the request.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>interval</strong></td>
+<td style="text-align: center">int</td>
+<td style="text-align: center">5</td>
+<td style="text-align: center">x in (5, 10, 15)</td>
+<td style="text-align: left">An integer value which represents the set of <code>Predictions</code> to be retrieved, has to be either 5, 10 or 15.</td>
+</tr>
+</tbody></table>
+
+<ul>
+<li>Each <a href="#predictions">Prediction</a> is classed by the intervals it was made in.</li>
+<li>Currently only 5, 10 and 15 minute <code>Predictions</code> are available upon request.</li>
+<li>If the <code>horizon</code> and <code>interval</code> parameters are incorrectly specified, a <a href="#client-based-exceptions">URLParameterError</a> will be returned in the response.</li>
+</ul>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ML comparisons"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status_code"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"payload"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"fqn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fqn1"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FQN 1"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"readings"</span><span class="p">:</span><span class="w"> </span><span class="s2">"blue"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"predictions"</span><span class="p">:</span><span class="w"> </span><span class="s2">"red"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"predictions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">12.1</span><span class="p">,</span><span class="w"> </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">13.42</span><span class="p">,</span><span class="w"> </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">46.98</span><span class="p">,</span><span class="w"> </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">},</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"readings"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">55.2</span><span class="p">,</span><span class="w"> </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">32.16</span><span class="p">,</span><span class="w"> </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">6.53</span><span class="p">,</span><span class="w"> </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">},</span><span class="w">
+        </span><span class="p">]</span><span class="w">       
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h4 id='response'>Response</h4>
+<table><thead>
+<tr>
+<th style="text-align: right">Attribute</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>status</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">&quot;OK&quot;</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>message</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">&quot;ML comparisons&quot;</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>status_code</strong></td>
+<td style="text-align: center">int</td>
+<td style="text-align: left">200</td>
+</tr>
+</tbody></table>
+
+<p>There will be a <code>payload</code> attribute populated with:</p>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Attribute</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>fqn</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">The FQN that the predictions and readings are associated with.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>name</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">The process name of the FQN.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>color</strong></td>
+<td style="text-align: center">Object</td>
+<td style="text-align: left">The color codes for frontends to render the colour of the graphs. (This is can be ignored)</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>readings</strong></td>
+<td style="text-align: center">Object Arrary</td>
+<td style="text-align: left">An array of <code>Readings</code> with the format specified in <a href="#readings">Readings</a>.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>predictions</strong></td>
+<td style="text-align: center">Object Arrary</td>
+<td style="text-align: left">An array of <code>Predictions</code> with the format specified in <a href="#predictions">Predictions</a>.</td>
+</tr>
+</tbody></table>
+<h2 id='errors'>Errors</h2>
+<p>Retrieves information for external errors that impact the service of Metislabs API. This should provide the user with information on why certain <code>Readings</code> or <code>Predictions</code> are missing.</p>
+<h3 id='usage'>Usage</h3>
+<table><thead>
+<tr>
+<th style="text-align: right"></th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>endpoint</strong></td>
+<td style="text-align: left"><code>https://api.metislabs.tech/1.0/errors</code></td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>method(s)</strong></td>
+<td style="text-align: left"><code>GET</code></td>
+</tr>
+</tbody></table>
+<h4 id='parameters'>Parameters</h4>
+<p>The <code>Default</code> column specifies the value used when the user does not specify a parameter in the request.</p>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Field</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: center">Default</th>
+<th style="text-align: center">Limitation</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>organisation</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: left">The organisation that the user belongs to.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>site</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: center">First site available to the user</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: left">The site that the user wants to retrieve data from.</td>
+</tr>
+</tbody></table>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+
+    </span><span class="s2">"status_code"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="s2">"Errors"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"payload"</span><span class="p">:[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="s2">"ingestion"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"end_timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1542122253</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"message"</span><span class="p">:</span><span class="s2">"Unable to retrieve historian data."</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"start_timestamp"</span><span class="p">:</span><span class="mi">1542121253</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="s2">"predict_handler"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"end_timestamp"</span><span class="p">:</span><span class="mi">1542122288</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"message"</span><span class="p">:</span><span class="s2">"Response error from the /config endpoint"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"start_timestamp"</span><span class="p">:</span><span class="mi">1542121253</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="s2">"OK"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h4 id='response'>Response</h4>
+<table><thead>
+<tr>
+<th style="text-align: right">Attribute</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>status</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">&quot;OK&quot;</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>message</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">&quot;Errors&quot;</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>status_code</strong></td>
+<td style="text-align: center">int</td>
+<td style="text-align: left">200</td>
+</tr>
+</tbody></table>
+
+<p>The <code>payload</code> attribute associated with a successful response will be available as an array of objects, each object will
+represent more information for a specific <code>error</code>.</p>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Attribute</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>category</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">The category of the error.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>message</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">Message of what went wrong.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>end_timestamp</strong></td>
+<td style="text-align: center">int or null</td>
+<td style="text-align: left">The UNIX-timestamp representation of when the error was resolved.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>start_timestamp</strong></td>
+<td style="text-align: center">int</td>
+<td style="text-align: left">The UNIX-timestamp representation of when the error was started.</td>
+</tr>
+</tbody></table>
+
+<ul>
+<li>The <strong>end_timestamp</strong> attribute can be <code>null</code> which means that the error is currently unresolved, errors which are resolved will return a valid timestamp.</li>
+<li>Currently there are two categories of errors, they can be understood by:</li>
+</ul>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Category</th>
+<th style="text-align: left">Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>ingestion</strong></td>
+<td style="text-align: left">Issues with data ingestion, this could range from network issues to historian issues.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>predict_handler</strong></td>
+<td style="text-align: left">Issues with making predictions, this could range from network issues to poor quality data being ingested.</td>
+</tr>
+</tbody></table>
+<h2 id='forecast-processes'>Forecast Processes</h2>
+<p>Retrieves information for forecasted processes. This provides the user with information on what processes are available, as well as if features such as <a href="#subsystem-breakdown">Subsystem Breakdown</a> are available for subprocesses.</p>
+<h3 id='usage'>Usage</h3>
+<table><thead>
+<tr>
+<th style="text-align: right"></th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>endpoint</strong></td>
+<td style="text-align: left"><code>https://api.metislabs.tech/1.0/forecast_processes</code></td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>method(s)</strong></td>
+<td style="text-align: left"><code>GET</code></td>
+</tr>
+</tbody></table>
+<h4 id='parameters'>Parameters</h4>
+<p>The <code>Default</code> column specifies the value used when the user does not specify a parameter in the request.</p>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Field</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: center">Default</th>
+<th style="text-align: center">Limitation</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>site</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: left">The site that the user wants to retrieve data from.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>process</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: center">None</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: left">The process that the user wants to retrieve data from.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>forecast</strong></td>
+<td style="text-align: center">stirng</td>
+<td style="text-align: center">None</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: left">The forecast that the user wants to retrieve data from.</td>
+</tr>
+</tbody></table>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Forecast Types and Processes"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status_code"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"payload"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"steam"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Steam Forecast"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"processes"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sub_process_1"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sub-process 1"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"subsystem_breakdown"</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w">
+            </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sub_process_2"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sub-process 2"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"subsystem_breakdown"</span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="w">
+            </span><span class="p">}]</span><span class="w">
+        </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"electricity"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Electricity Forecast"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"processes"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sub_proccess_3"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sub-Processes"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"subsystem_breakdown"</span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="w">
+            </span><span class="p">}]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h4 id='response'>Response</h4>
+<table><thead>
+<tr>
+<th style="text-align: right">Attribute</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>status</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">&quot;OK&quot;</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>message</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">&quot;Forecast Types and Processes&quot;</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>status_code</strong></td>
+<td style="text-align: center">int</td>
+<td style="text-align: left">200</td>
+</tr>
+</tbody></table>
+
+<p>The <code>payload</code> attribute associated with a successful response will be available as an array of objects, each object will
+represent the available forecasts and related info for a specific <code>process</code>.</p>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Attribute</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>id</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">The <code>id</code> of the aggregated process.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>name</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">The process name for the aggregated process.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>processes</strong></td>
+<td style="text-align: center">Object array</td>
+<td style="text-align: left">The <code>processes</code> attribute contains an array of objects described in the table below. Each object represents information regarding each seperate process within the aggregated process,</td>
+</tr>
+</tbody></table>
+
+<p>This table describes the attributes available for each <code>process</code> in the <code>processes</code> attribute:</p>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Attribute</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>id</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">The <code>id</code> of the individual process.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>name</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">The process name for the individual process.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>subsystem_breakdown</strong></td>
+<td style="text-align: center">boolean</td>
+<td style="text-align: left">This specifies if the process has its own subsystem breakdown.</td>
+</tr>
+</tbody></table>
+<h2 id='health-check'>Health Check</h2>
+<p>Retrieves the overall current health status of <code>Metislabs API</code>.</p>
+<h3 id='usage'>Usage</h3>
+<ul>
+<li>The expected response for a healthy Metislabs API is listed below in the responses section.</li>
+<li>Any other response indicates problems with the API, please contact the relevant support email for more information.</li>
+<li><p>This endpoint is publically available.</p>
+
+<table><thead>
+<tr>
+<th style="text-align: right"></th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>endpoint</strong></td>
+<td style="text-align: left"><code>https://api.metislabs.tech/1.0/health_check</code></td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>method(s)</strong></td>
+<td style="text-align: left"><code>GET</code></td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"All healthy!"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status_code"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"payload"</span><span class="p">:</span><span class="w"> </span><span class="err">None</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h4 id='response'>Response</h4>
+<table><thead>
+<tr>
+<th style="text-align: right">Attribute</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>status</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">&quot;OK&quot;</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>message</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">&quot;All healthy!&quot;</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>status_code</strong></td>
+<td style="text-align: center">int</td>
+<td style="text-align: left">200</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>payload</strong></td>
+<td style="text-align: center">JSON</td>
+<td style="text-align: left">null</td>
+</tr>
+</tbody></table>
+<h2 id='info-fields'>Info Fields</h2>
+<p>Retrieves additional information and statistics for related metrics.</p>
+<h3 id='usage'>Usage</h3>
+<table><thead>
+<tr>
+<th style="text-align: right"></th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>endpoint</strong></td>
+<td style="text-align: left"><code>https://api.metislabs.tech/1.0/info_fields</code></td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>method(s)</strong></td>
+<td style="text-align: left"><code>GET</code></td>
+</tr>
+</tbody></table>
+<h4 id='parameters'>Parameters</h4>
+<p>The <code>Default</code> column specifies the value used when the user does not specify a parameter in the request.</p>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Field</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: center">Default</th>
+<th style="text-align: center">Limitation</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>site</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: left">The site that the user wants to retrieve data from.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>process</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: center">None</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: left">The process that the user wants to retrieve data from.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>forecast</strong></td>
+<td style="text-align: center">stirng</td>
+<td style="text-align: center">None</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: left">The forecast that the user wants to retrieve data from.</td>
+</tr>
+</tbody></table>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Information Measurements &amp; Statistics"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status_code"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"payload"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"alert_level"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"purple"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"icon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"timelapse"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"until_next_stage"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Until next stage"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"position"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"prefix"</span><span class="p">:</span><span class="w"> </span><span class="err">None</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"suffix"</span><span class="p">:</span><span class="w"> </span><span class="s2">"minutes"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"operator"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"alert_level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"green"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"icon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"trending_up"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"additional_demand"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Additional demand"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"position"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"prefix"</span><span class="p">:</span><span class="w"> </span><span class="err">None</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"suffix"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tonnes"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"operator"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">3.24</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"alert_level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"blue"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"icon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"filter_drama"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"current_steam_flow"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Current steam flow"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"position"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"prefix"</span><span class="p">:</span><span class="w"> </span><span class="err">None</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"suffix"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tonnes"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"operator"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">3.66</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"alert_level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"green"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"icon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"show_chart"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"stage_prediction_accuracy"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Prediction accuracy"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"position"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"prefix"</span><span class="p">:</span><span class="w"> </span><span class="err">None</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"suffix"</span><span class="p">:</span><span class="w"> </span><span class="s2">"accurate"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"supervisor"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"87%"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h4 id='response'>Response</h4>
+<table><thead>
+<tr>
+<th style="text-align: right">Attribute</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>status</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">&quot;OK&quot;</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>message</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">&quot;Information Measurements &amp; Statistics&quot;</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>status_code</strong></td>
+<td style="text-align: center">int</td>
+<td style="text-align: left">200</td>
+</tr>
+</tbody></table>
+
+<p>The <code>payload</code> attribute associated with a successful response will be available as an array of objects, each object will
+represent the available metric.</p>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Attribute</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>alert_level</strong></td>
+<td style="text-align: center">int</td>
+<td style="text-align: left">The alert level of the metric, can be ignored.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>color</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">The color for the metric, can be ignored.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>icon</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">The icon for the metric, can be ignored.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>id</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">The id representation of the metric.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>label</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">The name of the metric.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>position</strong></td>
+<td style="text-align: center">int</td>
+<td style="text-align: left">The positional placement of the metric to be rendered by the frontend interface, can be ignored.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>prefix</strong></td>
+<td style="text-align: center">string or null</td>
+<td style="text-align: left">The unit prefix of the metric value, can be <code>null</code>.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>suffix</strong></td>
+<td style="text-align: center">string or null</td>
+<td style="text-align: left">The unit suffix of the metric value, can be <code>null</code>.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>type</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">The authorization level for the metric, either <code>supervisor</code> or <code>operator</code>.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>value</strong></td>
+<td style="text-align: center">string or float</td>
+<td style="text-align: left">A numerical or string value of the metric.</td>
+</tr>
+</tbody></table>
+<!-- ## Organisation Info -->
+<h2 id='prediction'>Prediction</h2>
+<p>Retrieves the most recent set of <code>Predictions</code> along with the most recent <code>horizon</code> span of <code>Readings</code>.</p>
+<h3 id='usage'>Usage</h3>
+<table><thead>
+<tr>
+<th style="text-align: right"></th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>endpoint</strong></td>
+<td style="text-align: left"><code>https://api.metislabs.tech/1.0/prediction</code></td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>method(s)</strong></td>
+<td style="text-align: left"><code>GET</code></td>
+</tr>
+</tbody></table>
+<h4 id='parameters'>Parameters</h4>
+<p>The <code>Default</code> column specifies the value used when the user does not specify a parameter in the request.</p>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Field</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: center">Default</th>
+<th style="text-align: center">Limitation</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>organisation</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: left">The organisation that the user belongs to.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>site</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: center">First site available to the user</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: left">The site that the user wants to retrieve data from.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>process</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: center">None</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: left">The process that the user wants to retrieve data from.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>forecast</strong></td>
+<td style="text-align: center">stirng</td>
+<td style="text-align: center">None</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: left">The forecast that the user wants to retrieve data from.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>horizon</strong></td>
+<td style="text-align: center">float</td>
+<td style="text-align: center">2.5</td>
+<td style="text-align: center">x &gt; 0</td>
+<td style="text-align: left">A float value which represents the number of hours of <code>Readings</code> the user specifies in the request.</td>
+</tr>
+</tbody></table>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ML predictions"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status_code"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"payload"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"fqn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fqn1"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FQN 1"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"readings"</span><span class="p">:</span><span class="w"> </span><span class="s2">"blue"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"predictions"</span><span class="p">:</span><span class="w"> </span><span class="s2">"red"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"predictions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">12.1</span><span class="p">,</span><span class="w"> </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">13.42</span><span class="p">,</span><span class="w"> </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">46.98</span><span class="p">,</span><span class="w"> </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">},</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"readings"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">55.2</span><span class="p">,</span><span class="w"> </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">32.16</span><span class="p">,</span><span class="w"> </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">6.53</span><span class="p">,</span><span class="w"> </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">},</span><span class="w">
+        </span><span class="p">]</span><span class="w">       
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h4 id='response'>Response</h4>
+<table><thead>
+<tr>
+<th style="text-align: right">Attribute</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>status</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">&quot;OK&quot;</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>message</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">&quot;ML predictions&quot;</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>status_code</strong></td>
+<td style="text-align: center">int</td>
+<td style="text-align: left">200</td>
+</tr>
+</tbody></table>
+
+<p>There will be a <code>payload</code> attribute associated with a successful response with:</p>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Attribute</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>fqn</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">The FQN that the predictions and readings are associated with.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>name</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">The process name for the FQN.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>color</strong></td>
+<td style="text-align: center">Object</td>
+<td style="text-align: left">The color codes for frontends to render the colour of the graphs. (This is can be ignored)</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>readings</strong></td>
+<td style="text-align: center">Object array</td>
+<td style="text-align: left">A list of <code>Readings</code> with the format specified in <a href="#readings">Readings</a>.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>predictions</strong></td>
+<td style="text-align: center">Object array</td>
+<td style="text-align: left">A list of <code>Predictions</code> with the format specified in <a href="#predictions">Predictions</a>.</td>
+</tr>
+</tbody></table>
+<!-- ## Profile -->
+<h2 id='subsystem-breakdown'>Subsystem Breakdown</h2>
+<p>Retrieves a breakdown of aggregated <code>Readings</code>. This applies to all appropriate <code>FQNs</code> that are influential in the overall process.</p>
+<h3 id='usage'>Usage</h3>
+<table><thead>
+<tr>
+<th style="text-align: right"></th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>endpoint</strong></td>
+<td style="text-align: left"><code>https://api.metislabs.tech/1.0/subsystem_breakdown</code></td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>method(s)</strong></td>
+<td style="text-align: left"><code>GET</code></td>
+</tr>
+</tbody></table>
+<h4 id='parameters'>Parameters</h4>
+<p>The <code>Default</code> column specifies the value used when the user does not specify a parameter in the request.</p>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Field</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: center">Default</th>
+<th style="text-align: center">Limitation</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>site</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: left">The site that the user wants to retrieve data from.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>process</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: center">None</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: left">The process that the user wants to retrieve data from.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>forecast</strong></td>
+<td style="text-align: center">stirng</td>
+<td style="text-align: center">None</td>
+<td style="text-align: center">NA</td>
+<td style="text-align: left">The forecast that the user wants to retrieve data from.</td>
+</tr>
+</tbody></table>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Subsystem Breakdown"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status_code"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"payload"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"fqn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fqn1"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FQN 1"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"readings"</span><span class="p">:</span><span class="w"> </span><span class="s2">"red"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"predictions"</span><span class="p">:</span><span class="w"> </span><span class="s2">"blue"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"readings"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">55.2</span><span class="p">,</span><span class="w"> </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">32.16</span><span class="p">,</span><span class="w"> </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">6.53</span><span class="p">,</span><span class="w"> </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">},</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"fqn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fqn2"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FQN 2"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"readings"</span><span class="p">:</span><span class="w"> </span><span class="s2">"red"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"predictions"</span><span class="p">:</span><span class="w"> </span><span class="s2">"blue"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"readings"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">324.0</span><span class="p">,</span><span class="w"> </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.44</span><span class="p">,</span><span class="w"> </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">56.11</span><span class="p">,</span><span class="w"> </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">},</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h4 id='response'>Response</h4>
+<table><thead>
+<tr>
+<th style="text-align: right">Attribute</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>status</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">&quot;OK&quot;</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>message</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">&quot;Subsystem Breakdown&quot;</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>status_code</strong></td>
+<td style="text-align: center">int</td>
+<td style="text-align: left">200</td>
+</tr>
+</tbody></table>
+
+<p>The <code>payload</code> attribute associated with a successful response will be available as a list of objects, each object will
+represent the system breakdown for a specific <code>FQN</code>. Here each object is described in more detail:</p>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Attribute</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: left">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>fqn</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">The FQN that the readings are associated with.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>name</strong></td>
+<td style="text-align: center">string</td>
+<td style="text-align: left">The process name for the FQN.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>color</strong></td>
+<td style="text-align: center">Object array</td>
+<td style="text-align: left">The color codes for frontends to render the colour of the graphs. (This is can be ignored)</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>readings</strong></td>
+<td style="text-align: center">Object array</td>
+<td style="text-align: left">A list of <code>Readings</code> with the format specified in <a href="#readings">Readings</a>.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>predictions</strong></td>
+<td style="text-align: center">Object array</td>
+<td style="text-align: left">A list of <code>Predictions</code> with the format specified in <a href="#predictions">Predictions</a>.</td>
+</tr>
+</tbody></table>
+<h2 id='exceptions'>Exceptions</h2>
+<ul>
+<li>The Metislabs API returns the following exception codes. All of the exceptions are returned in the standard format mentioned <a href="#response-format">here</a>. </li>
+<li>All of the responses will return a <code>payload</code> attribute of <code>null</code>.</li>
+<li>In the <code>message</code> attribute, there is a more verbose message detailing the situation and what went wrong.</li>
+</ul>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"page-not-found"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;404 Page Not Found&gt;: Your request did not contain the correct URL or format, please try again."</span><span class="p">,</span><span class="w"> 
+    </span><span class="s2">"payload"</span><span class="p">:</span><span class="w"> </span><span class="err">None</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h3 id='client-based-exceptions'>Client based exceptions</h3>
+<ul>
+<li>Client based exceptions usually result from incorrect data input, wrong resources specified or unauthenticated access, if any of these occur, please check again how the resources are being accessed or used.</li>
+</ul>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Status</th>
+<th style="text-align: center">Status Code</th>
+<th style="text-align: left">Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>url-parameter-error</strong></td>
+<td style="text-align: center">400</td>
+<td style="text-align: left">The parameters supplied to the URL are incorrect or of a bad format.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>authentication-required</strong></td>
+<td style="text-align: center">401</td>
+<td style="text-align: left">Authentication is required to access resources at the endpoint.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>permission-denied</strong></td>
+<td style="text-align: center">403</td>
+<td style="text-align: left">The permissions level associated with the request was not sufficient to use the endpoint.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>page-not-found</strong></td>
+<td style="text-align: center">404</td>
+<td style="text-align: left">The URL used in the request does not exist on the API.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>method-not-allowed</strong></td>
+<td style="text-align: center">405</td>
+<td style="text-align: left">The HTTP method supplied in the request is not permitted on the endpoint.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>forecast-not-found</strong></td>
+<td style="text-align: center">500</td>
+<td style="text-align: left">The specified forecast was not found for the parameters specified, please check them again.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>subsystem-breakdown-not-found</strong></td>
+<td style="text-align: center">500</td>
+<td style="text-align: left">The specified subsystem breakdown was not found for the parameters specified, please check them again.</td>
+</tr>
+</tbody></table>
+<h3 id='server-based-exceptions'>Server based exceptions</h3>
+<ul>
+<li>Server based exceptions result from exceptions or bugs in the API, if any of these occur, please do not hesistate to contact the customer support email with appropriate details to replicate the issue.</li>
+</ul>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Status</th>
+<th style="text-align: center">Status Code</th>
+<th style="text-align: left">Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right"><strong>internal-server-error</strong></td>
+<td style="text-align: center">500</td>
+<td style="text-align: left">A generic error in the server.</td>
+</tr>
+<tr>
+<td style="text-align: right"><strong>customer-not-found</strong></td>
+<td style="text-align: center">500</td>
+<td style="text-align: left">The specified customer was not found, please contact customer support.</td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="json">json</a>
+                <a href="#" data-language-name="curl">curl</a>
+                <a href="#" data-language-name="python">python</a>
+                <a href="#" data-language-name="js">js</a>
+                <a href="#" data-language-name="csharp">csharp</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
