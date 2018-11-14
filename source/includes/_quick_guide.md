@@ -2,7 +2,7 @@
 
 ### Management
 
-* Each `token` in the Metislabs API will belong to an `organisation`.
+* Each `token` in the Metis Labs API will belong to an `organisation`.
 * Each `organisation` can have one or more `sites` associated with the `organisation`, in most cases, `sites` can be thought of as individual factories.
 * Each `site` contains multiple `processes` which may have `forecasts` associated with them.
 * Trying to access `organisation`, `site`, `proccess` and `forecast` which are not authorised to the `token` will result in a
@@ -10,7 +10,7 @@
 
 ### Response Format
 
-* All of the responses returned from the Metislabs API follow a standardized format.
+* All of the responses returned from the Metis Labs API follow a standardized format.
 
 Field | Type | Description
 ------:|:------:|:------------
@@ -21,7 +21,7 @@ __payload__ | Object |  Contains either the requested data in a JSON format or `
 
 ### Readings
 
-* Most of the data that the Metislabs API exposes can be thought of as `Readings`. 
+* Most of the data that the Metis Labs API exposes can be thought of as `Readings`. 
 * Each `Reading` represents the recorded value(__value__) of an identified sensor(__fqn__) at a specific time(__timestamp__).
 
 Field | Type | Description
@@ -32,7 +32,7 @@ __value__ | float | The recorded result of the measurement.
 
 ### Predictions 
 
-* The core of the Metislabs API provides different forms of `Predictions` for the user.
+* The core of the Metis Labs API provides different forms of `Predictions` for the user.
 * `Predictions` are projected future `Readings` made from previously recorded `Readings`.
 * In most cases, for each `Reading`, there are a set of `Predictions` associated with it.
 * Each `Prediction` belongs to an `interval` set as there are 5, 10 and 15 minute `Predictions` made from a `Reading`.

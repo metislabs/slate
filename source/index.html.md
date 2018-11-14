@@ -1,5 +1,5 @@
 ---
-title: Metislabs API Reference
+title: Metis Labs API Reference
 
 language_tabs:
   - json

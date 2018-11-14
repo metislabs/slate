@@ -1,10 +1,10 @@
 ## Health Check
 
-Retrieves the overall current health status of `Metislabs API`.
+Retrieves the overall current health status of Metis Labs API.
 
 ### Usage
 
-* The expected response for a healthy Metislabs API is listed below in the responses section.
+* The expected response for a healthy Metis Labs API is listed below in the responses section.
 * Any other response indicates problems with the API, please contact the relevant support email for more information.
 * This endpoint is publically available.
 
