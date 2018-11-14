@@ -3,7 +3,7 @@ title: Metislabs API Reference
 
 language_tabs:
   - json
-  - curl
+  - shell: curl
   - python
   - js
   - csharp
