@@ -1,5 +1,5 @@
 ## Errors
-Retrieves information for external errors that impact the service of Metislabs API. This should provide the user with information on why certain `Readings` or `Predictions` are missing.
+Retrieves information for external errors that impact the service of Metis Labs API. This should provide the user with information on why certain `Readings` or `Predictions` are missing.
 
 ### Usage
 

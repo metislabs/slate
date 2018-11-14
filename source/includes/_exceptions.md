@@ -1,6 +1,6 @@
 ## Exceptions
 
-* The Metislabs API returns the following exception codes. All of the exceptions are returned in the standard format mentioned [here](#response-format). 
+* The Metis Labs API returns the following exception codes. All of the exceptions are returned in the standard format mentioned [here](#response-format). 
 * All of the responses will return a `payload` attribute of `null`.
 * In the `message` attribute, there is a more verbose message detailing the situation and what went wrong.
 
